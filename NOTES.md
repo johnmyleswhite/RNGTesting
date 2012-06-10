@@ -14,7 +14,7 @@
   * This will make it easier to track output made by STS, which are hard to observe because of directory structure used.
 * `make`
   * This will build the `assess` executable and some object files in `obj`.
-* Run `./assess 10000` in accord with directions for test system.
+* Run `./assess 10000` in accord with directions for test system found in Section 5-1 of PDF in `doc/`.
 * Enter the following choices:
   * 0
   * ../../output/julia_bits.txt
