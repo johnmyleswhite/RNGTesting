@@ -12,7 +12,7 @@ end
 
 srand(1)
 
-n_bits = 100_000
+n_bits = 1_000_000
 
 tic()
 bitstring = generate_n_bits(n_bits)
@@ -24,4 +24,8 @@ close(f)
 
 f = open("output/julia_timing.txt", "w")
 println(f, "$total_time seconds")
+close(f)
+
+f = open("output/nonrandom_bits.txt", "w")
+println(f, "10"^500000)
 close(f)

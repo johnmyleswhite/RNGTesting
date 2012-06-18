@@ -19,10 +19,29 @@
   * 0
   * ../../output/julia_bits.txt
   * 0
-  * 000000100000000
+  * 111111111011111
   * 10
   * 0
 * Decipher output from `experiments/AlgorithmTesting/`
+* `cp experiments/AlgorithmTesting/finalAnalysisReport.txt ../..`
+
+All tests work except #10:
+
+* [01] Frequency
+* [02] Block Frequency
+* [03] Cumulative Sums
+* [04] Runs
+* [05] Longest Run of Ones
+* [06] Rank
+* [07] Discrete Fourier Transform
+* [08] Nonperiodic Template Matchings
+* [09] Overlapping Template Matchings
+* [10] Universal Statistical (fails for unknown reason with seg fault)
+* [11] Approximate Entropy
+* [12] Random Excursions
+* [13] Random Excursions Variant
+* [14] Serial
+* [15] Linear Complexity
 
 # Testing Julia's RNG's
 * Generate random bits (and timing info) using Julia's RNG's:
