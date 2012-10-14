@@ -1,10 +1,19 @@
 function generate_n_bits(n_bits::Int64)
-  bitstring::ASCIIString = ""  
-  for i = 1:n_bits
-    if rand() > 0.5
-      bitstring = strcat(bitstring, "1")
-    else
-      bitstring = strcat(bitstring, "0")
+  bitstring = ""
+  i = 1
+  while i <= n_bits
+    # Discard first 12 bits of output from rand().
+    random_bits = split(bits(rand()), "")[13:end]
+    for bit in random_bits
+      if bit == "0"
+        bitstring = strcat(bitstring, "1")
+      else
+        bitstring = strcat(bitstring, "0")
+      end
+      i += 1
+      if i > n_bits
+        break
+      end
     end
   end
   bitstring

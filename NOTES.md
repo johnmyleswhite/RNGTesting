@@ -1,3 +1,9 @@
+# Testing Julia's RNG's
+* Generate random bits (and timing info) using Julia's RNG's:
+  * `julia src/generate_julia_bits.jl`
+* Need to automatically run relevant tests.
+* Need to automatically parse and interpret results.
+
 # Diehard
 * Worryingly obscure by its own self-description.
 
@@ -18,6 +24,7 @@
 * Enter the following choices:
   * 0
   * ../../output/julia_bits.txt
+  * 0
   * 0
   * 111111111011111
   * 10
@@ -42,9 +49,3 @@ All tests work except #10:
 * [13] Random Excursions Variant
 * [14] Serial
 * [15] Linear Complexity
-
-# Testing Julia's RNG's
-* Generate random bits (and timing info) using Julia's RNG's:
-  * `julia src/generate_julia_bits.jl`
-* Need to automatically run relevant tests.
-* Need to automatically parse and interpret results.
